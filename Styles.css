@@ -389,7 +389,7 @@ a {
 @media screen and (max-width: 768px) {
   #bottom_content {
     transform: translate(-50%, 0); /* Adjust the vertical position for small screens */
-    bottom: -100px; /* Add some spacing from the bottom for small screens */
+    bottom: -300px; /* Add some spacing from the bottom for small screens */
   }
 
   
