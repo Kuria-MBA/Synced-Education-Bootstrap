@@ -1,16 +1,11 @@
 body {
-  background-color: #f7f7f7;
+  
 
 }
 #LOG_IN {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
   margin-bottom: 100px;
   font-family: 'TeXGyreHeros', sans-serif;
 }
@@ -89,9 +84,9 @@ body {
   font-family: 'TeXGyreHeros', sans-serif;
   position: absolute;
   left: 50%;
-  bottom: 0;
+  
   transform: translate(-50%, -50%);
-  margin-top: 30px; 
+  margin-top: 100px; 
 }
 #bottom_content_table{
   table-layout: fixed;
@@ -104,8 +99,9 @@ body {
    padding: 8px;
    text-align: center;
    width: calc(100% / 3); /* This will make the cells have equal width (since we have 3 columns) */
-        
+       
 }
+
 
 #top_items{
   display: flex;
@@ -350,11 +346,18 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  
 }
-
+.card{
+  transition: transform 0.5s ease;
+}
 .card:hover{
   background-color: #0a914b;
   color: #ffffff;
+  transition: 0.5s;
+  transform: translateY(-5px);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  
 }
 
 /* Custom styles for the cards */
@@ -368,7 +371,26 @@ a {
   height: 100%;
   flex-direction: column;
 }
+.practice-header {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px; /* Add left padding to center the header a bit */
+  font-family: 'TeXGyreHeros', sans-serif;
+}
 
+.practice-card {
+  width: 250px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+.container {
+  margin-bottom: 50px;
+}
 .horizontal-bar {
   width: 80%;
   height: 5px;
@@ -391,6 +413,10 @@ a {
     transform: translate(-50%, 0); /* Adjust the vertical position for small screens */
     bottom: -300px; /* Add some spacing from the bottom for small screens */
   }
-
+  #bottom_content_table{
+    border-spacing: 20px;
+   
+  }
+  
   
 }
