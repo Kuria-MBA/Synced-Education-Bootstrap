@@ -2,9 +2,6 @@ body {
   background-color: #f7f7f7;
 
 }
-
-
-
 #LOG_IN {
   display: flex;
   flex-direction: column;
@@ -94,11 +91,13 @@ body {
   left: 50%;
   bottom: 0;
   transform: translate(-50%, -50%);
+  margin-top: 30px; 
 }
 #bottom_content_table{
   table-layout: fixed;
-  width: 100%; /* This will make the table occupy the entire width of the container div */
+  width: 100%; 
   border-collapse: collapse;
+ 
 }
 
 #bottom_content_table th, #bottom_content_table td{
@@ -331,20 +330,19 @@ a {
 
 
 .carousel-container {
-  padding-top: 50px; /* Add padding to the top to space it lower */
-  /* Alternatively, you can use margin-top: 50px; */
-}
- /* Custom styles for the carousel container */
- #myCarousel.carousel-box {
-  width: 50%;
-  margin: 0 auto; /* Center the carousel */
-  background-color: #f0f0f0; /* Light gray background color */
-  padding: 20px; /* Add some padding for spacing */
+  padding-top: 50px; 
 }
 
-/* Custom styles for the carousel content */
+ #myCarousel.carousel-box {
+  width: 50%;
+  margin: 0 auto; 
+  background-color: #f0f0f0; 
+  padding: 20px; 
+}
+
+
 .carousel-content {
-  text-align: center; /* Center the text inside each slide */
+  text-align: center; 
   padding: 30px;
 }
 
@@ -386,4 +384,13 @@ a {
   background-color: #f9f9f9;
   font-size: 16px;
   line-height: 1.6;
+}
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  #bottom_content {
+    transform: translate(-50%, 0); /* Adjust the vertical position for small screens */
+    bottom: -100px; /* Add some spacing from the bottom for small screens */
+  }
+
+  
 }
