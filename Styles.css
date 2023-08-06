@@ -1,0 +1,389 @@
+body {
+  background-color: #f7f7f7;
+
+}
+
+
+
+#LOG_IN {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  margin-bottom: 100px;
+  font-family: 'TeXGyreHeros', sans-serif;
+}
+
+#Welcome {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 500px;
+  height: auto;
+}
+
+#Get_into {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#LOG_IN{
+  padding-bottom: 100px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Login_Stuff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#LOG_IN_USERNAME,
+#LOG_IN_PASSWORD {
+  margin-bottom: 15px;
+  
+}
+
+#LOG_IN_USERNAME input,
+#LOG_IN_PASSWORD input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  
+}
+
+#LOG_IN_BUTTONS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#LOG_IN_LOGIN {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#LOG_IN_LOGIN_BUTTON {
+  background-color: #0a914b;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#LOG_IN_LOGIN_BUTTON:hover {
+  opacity: 0.8;
+}
+
+#bottom_content{
+  font-family: 'TeXGyreHeros', sans-serif;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}
+#bottom_content_table{
+  table-layout: fixed;
+  width: 100%; /* This will make the table occupy the entire width of the container div */
+  border-collapse: collapse;
+}
+
+#bottom_content_table th, #bottom_content_table td{
+   padding: 8px;
+   text-align: center;
+   width: calc(100% / 3); /* This will make the cells have equal width (since we have 3 columns) */
+        
+}
+
+#top_items{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'TeXGyreHeros', sans-serif;
+}
+
+.navbar,
+.navbar > .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .navbar,
+.navbar > .container {
+    display: block;
+  }
+}
+
+.navbar {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  padding: 1rem 1.15rem;
+  border-bottom: 1px solid #eceef3;
+  /*
+  |-----------------------------------
+  | Start navbar logo or brand etc..
+  |-----------------------------------
+  */
+  /*
+  |-----------------------------------
+  | Start navbar menu
+  |-----------------------------------
+  */
+}
+@media (min-width: 576px) {
+  .navbar .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar .container {
+    max-width: 1140px;
+  }
+}
+.navbar .navbar-header {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
+.navbar .navbar-header .navbar-toggler {
+  cursor: pointer;
+  border: none;
+  display: none;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-header .navbar-toggler {
+    display: block;
+  }
+}
+.navbar .navbar-header .navbar-toggler span {
+  height: 2px;
+  width: 22px;
+  background-color: #929aad;
+  display: block;
+}
+.navbar .navbar-header .navbar-toggler span:not(:last-child) {
+  margin-bottom: 0.2rem;
+}
+.navbar .navbar-header > a {
+  font-weight: 500;
+  color: #3c4250;
+}
+.navbar .navbar-menu {
+  display: flex;
+  align-items: center;
+  flex-basis: auto;
+  flex-grow: 1;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-menu {
+    display: none;
+    text-align: center;
+  }
+}
+.navbar .navbar-menu.active {
+  display: flex !important;
+}
+.navbar .navbar-menu .navbar-nav {
+  margin-left: auto;
+  flex-direction: row;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-menu .navbar-nav {
+    width: 100%;
+    display: block;
+    border-top: 1px solid #eee;
+    margin-top: 1rem;
+  }
+}
+.navbar .navbar-menu .navbar-nav > li > a {
+  color: #3c4250;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+.navbar .navbar-menu .navbar-nav > li > a:hover {
+  color: #0a914b;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-menu .navbar-nav > li > a {
+    border-bottom: 1px solid #eceef3;
+  }
+}
+.navbar .navbar-menu .navbar-nav > li.active a {
+  color: #0a914b;
+}
+.navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown {
+  list-style: none;
+  position: absolute;
+  top: 150%;
+  left: 0;
+  background-color: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  min-width: 160px;
+  width: auto;
+  white-space: nowrap;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 99999;
+  border-radius: 0.75rem;
+  display: none;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown {
+    position: relative;
+    box-shadow: none;
+  }
+}
+.navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown li a {
+  color: #0a914b;
+  padding: 0.25rem 1rem;
+  display: block;
+}
+.navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown.show {
+  display: block !important;
+}
+.navbar .navbar-menu .navbar-nav .dropdown > .separator {
+  height: 1px;
+  width: 100%;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  background-color: #eceef3;
+}
+.navbar .navbar-dropdown {
+  position: relative;
+}
+
+.navbar .navbar-header > a span {
+  color: #0a914b;
+}
+
+.navbar .navbar-header h4 {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-header h4 {
+    font-size: 1.05rem;
+  }
+}
+
+
+.carousel-container {
+  padding-top: 50px; /* Add padding to the top to space it lower */
+  /* Alternatively, you can use margin-top: 50px; */
+}
+ /* Custom styles for the carousel container */
+ #myCarousel.carousel-box {
+  width: 50%;
+  margin: 0 auto; /* Center the carousel */
+  background-color: #f0f0f0; /* Light gray background color */
+  padding: 20px; /* Add some padding for spacing */
+}
+
+/* Custom styles for the carousel content */
+.carousel-content {
+  text-align: center; /* Center the text inside each slide */
+  padding: 30px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card:hover{
+  background-color: #0a914b;
+  color: #ffffff;
+}
+
+/* Custom styles for the cards */
+.custom-card {
+  width: 400px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.horizontal-bar {
+  width: 80%;
+  height: 5px;
+  background-color: #0a914b;
+  margin: 30px auto;
+  
+}
+.company-info {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  line-height: 1.6;
+}
