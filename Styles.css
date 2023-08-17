@@ -100,7 +100,7 @@ body {
   font-family: 'TeXGyreHeros', sans-serif;
   position: absolute;
   left: 50%;
-  
+  width: 25%;
   transform: translate(-50%, -50%);
   margin-top: 100px; 
 }
@@ -381,7 +381,7 @@ a {
 
 /* Custom styles for the cards */
 .custom-card {
-  width: 400px;
+  width: 300px;
   margin: 10px;
   border: 1px solid #ccc;
   display: flex;
