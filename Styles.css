@@ -9,6 +9,10 @@ body {
   margin-bottom: 100px;
   font-family: 'TeXGyreHeros', sans-serif;
 }
+#Above_Form_Title{
+  font-family: 'TeXGyreHeros', sans-serif;
+  font-weight: bold;
+}
 
 #Welcome {
   margin-top: 100px;
@@ -25,7 +29,8 @@ body {
 }
 
 #LOG_IN{
-  padding-bottom: 100px;
+  
+  margin-bottom: 200px;
   display: flex;
     justify-content: center;
     align-items: center;
@@ -39,14 +44,25 @@ body {
 }
 
 #LOG_IN_USERNAME,
-#LOG_IN_PASSWORD {
+#LOG_IN_PASSWORD{
   margin-bottom: 15px;
   
+}
+#LOG_IN_NAME{
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#LOG_IN_NAME input{
+  width: 140px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 0.85em;
 }
 
 #LOG_IN_USERNAME input,
 #LOG_IN_PASSWORD input {
-  width: 100%;
+  width: 300px;
   padding: 10px;
   border-radius: 5px;
   font-size: 1em;
@@ -332,7 +348,7 @@ a {
  #myCarousel.carousel-box {
   width: 50%;
   margin: 0 auto; 
-  background-color: #f0f0f0; 
+  background-color: #4cdd92; 
   padding: 20px; 
 }
 
@@ -350,6 +366,9 @@ a {
 }
 .card{
   transition: transform 0.5s ease;
+}
+.card-title {
+  margin-top: 20px;
 }
 .card:hover{
   background-color: #0a914b;
@@ -392,7 +411,7 @@ a {
   margin-bottom: 50px;
 }
 .horizontal-bar {
-  width: 80%;
+  width: 60%;
   height: 5px;
   background-color: #0a914b;
   margin: 30px auto;
@@ -419,4 +438,14 @@ a {
   }
   
   
+}
+
+#bottom_link:hover{
+  text-decoration: underline;
+  transition: transform 0.5s ease;
+}
+#bottom_link{
+  text-decoration: none;
+  font-family: 'TeXGyreHeros', sans-serif;
+  color: black;
 }
